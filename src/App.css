@@ -2,6 +2,18 @@
   text-align: center;
 }
 
+button{
+  background-color: rgba(0, 0, 255, 0.557);
+  color:aliceblue;
+  margin:6px;
+  padding:15px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.927);
+  font-size: 20px;
+  
+}    
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;

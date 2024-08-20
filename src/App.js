@@ -1,23 +1,26 @@
-import logo from './logo.svg';
+import React, { useState } from 'react';
 import './App.css';
+import CurrencySearch from './components/CurrencySearch.jsx';
+import CurrencySearchCountry from './components/CurrencySearchCountries.jsx';
 
 function App() {
+  const [showCountry, setShowCountry] = useState(false); 
+
+  const handleButtonClick = (componentName) => {
+    if (componentName === 'country') {
+      setShowCountry(true);
+    } else if (componentName === 'cripto') {
+      setShowCountry(false);
+    }
+  };
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div>
+        <button className="btn btn-primary mt-4 me-2" onClick={() => handleButtonClick('country')}>Otros Países</button>
+        <button className="btn btn-primary mt-4 me-2" onClick={() => handleButtonClick('cripto')}> Criptomonedas</button>
+      </div>
+      {showCountry ? <CurrencySearchCountry /> : <CurrencySearch />}
     </div>
   );
 }

@@ -1,0 +1,21 @@
+.main-title {
+    color: white;
+    font-size: 50px;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.8), 0 0 10px rgba(0, 0, 255, 0.8);
+}
+
+p {
+    color: white;
+    font-size: 50px;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.8), 0 0 10px rgba(0, 0, 255, 0.8);
+}
+
+
+.table_convert {
+    background-color: rgba(42, 30, 202, 0.74); 
+    border: 2px solid; 
+    padding: 15px;
+    border-radius: 10px;
+    font-size: 24px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+}
